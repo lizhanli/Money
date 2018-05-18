@@ -4,6 +4,7 @@ target "Money" do
     use_frameworks!
     pod 'SnapKit'
     pod 'IQKeyboardManager','>= 3.2.2'
+    pod 'Alamofire', '~>4.0.0'
 
 end
 post_install do |installer|

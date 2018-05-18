@@ -16,10 +16,12 @@ var DebugLog: Bool {
 
 let ZLScreenWidth = UIScreen.main.bounds.size.width
 let ZLScreenHeight = UIScreen.main.bounds.size.height
+let BOTTOMSAFEHEIGHT:CGFloat = 34 //iPhoneX下面的安全条高度
 
 typealias DictionaryDefault = Dictionary<String, Any>
 typealias SimpleCallBackData = (_ data:Dictionary<String,Any>) ->Void
-typealias SimpleCallBackAny = (_ objc:Any) ->Void
+typealias SimpleCallBackWithDic = (_ data: DictionaryDefault?) -> Void
+typealias SimpleCallBackAny = (_ objc:Any?) ->Void
 typealias SimpleCallBack = () ->Void
 
 func logInfo(_ value: String, file: String = #file, line: Int = #line){
