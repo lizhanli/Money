@@ -12,7 +12,6 @@ class ZLHomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        logInfo("测试")
     }
 
     override func didReceiveMemoryWarning() {
