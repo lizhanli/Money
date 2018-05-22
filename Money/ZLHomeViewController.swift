@@ -8,37 +8,51 @@
 
 import UIKit
 
-class ZLHomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
+class ZLHomeViewController: BaseUIViewControllerPlan{
     
-    var tableView:UITableView!
+    let dataArray = [
+        ["title":"断点续传","value":"ZLDownLoadViewController"],
+        ["title":"头部层叠效果","value":"ZLHeadStackTableViewController"],
+        ["title":"CATransform3D变换的应用","value":"ZLCATransform3DViewController"],
+        ["title":"iOS CAAnimation动画体系的介绍","value":"ZLCAAnimationViewController"]
+    ]
+    var age:String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.white
-        var height = ZLScreenHeight - zl_heightNavBar - zl_heightStatusBar - zl_heightTabBar
-        if UIDevice.current.isIphoneX() {
-            height = height - BOTTOMSAFEHEIGHT
-        }
+        cellArray = [UITableViewCell()]
         
-        tableView = UITableView(frame: CGRect(x: 0, y: 0, width: ZLScreenWidth, height: height), style: UITableViewStyle.plain)
-        tableView.dataSource = self
-        tableView.delegate = self
-        self.view.addSubview(tableView)
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellId")
-    
     }
     //MARK: -UITableViewDataSource
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 36
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dataArray.count
     }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath)
-        cell.textLabel?.text = "\(indexPath.row)======="
+        let dict = dataArray[indexPath.row]
+        cell.textLabel?.text = dict.stringForKey("title")
         return cell
     }
     //MARK: -UITableViewDelegate
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        self.navigationController?.pushViewController(ZLDownLoadViewController(), animated: true)
+        if let value = dataArray[indexPath.row].stringForKey("value"),let nameSpace = Bundle.main.infoDictionary?.stringForKey("CFBundleExecutable"){
+            //获取命名空间
+            let className:AnyObject = NSClassFromString("\(nameSpace).\(value)")!
+            let viewControllerClass = className as! UIViewController.Type
+            let viewController = viewControllerClass.init()
+        self.navigationController?.pushViewController(viewController, animated: true)
+        }
     }
 }
+class ZLImageHeadView: UIView {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.backgroundColor = UIColor.green
+    }
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
+
+

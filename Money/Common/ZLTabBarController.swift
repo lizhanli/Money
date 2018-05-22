@@ -17,7 +17,7 @@ class ZLTabBarController: UITabBarController,UITabBarControllerDelegate {
         let tabBar = ZLTabBar(frame: self.tabBar.frame)
         tabBar.zlTabBarDelegate = self
         self.setValue(tabBar, forKey: "tabBar")
-        let homeVc = ZLHomeViewController()
+        let homeVc = ZLHomeViewController(style: UITableViewStyle.plain)
         homeVc.title = "首页"
 //        let testVc = ZLMidViewController()
         
