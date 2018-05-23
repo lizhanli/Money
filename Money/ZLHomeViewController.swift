@@ -14,7 +14,9 @@ class ZLHomeViewController: BaseUIViewControllerPlan{
         ["title":"断点续传","value":"ZLDownLoadViewController"],
         ["title":"头部层叠效果","value":"ZLHeadStackTableViewController"],
         ["title":"CATransform3D变换的应用","value":"ZLCATransform3DViewController"],
-        ["title":"iOS CAAnimation动画体系的介绍","value":"ZLCAAnimationViewController"]
+        ["title":"iOS CAAnimation动画体系的介绍","value":"ZLCAAnimationViewController"],
+        ["title":"事务CATransaction","value":"ZLCATransactionViewController"],
+        ["title":"自定义转场动画","value":"ZLModalTransitionViewController"]
     ]
     var age:String?
     
