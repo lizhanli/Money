@@ -11,7 +11,7 @@ import UIKit
 class ZLAnimationController: NSObject,UIViewControllerAnimatedTransitioning{
 
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return 0.3
+        return 0.5
     }
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
@@ -26,11 +26,12 @@ class ZLAnimationController: NSObject,UIViewControllerAnimatedTransitioning{
             containerView.addSubview(toView!)
             let toViewWidth:CGFloat = containerView.frame.size.width * 2 / 3
             let toViewHeight:CGFloat = containerView.frame.size.width * 2 / 3
-            toView?.center = containerView.center
-            toView?.bounds = CGRect(x: 0, y: 0, width: 1, height: toViewHeight)
+//            toView?.center = containerView.center
+            toView?.frame = CGRect(x: 0, y: 0, width: 1, height: 1)
             if #available(iOS 8, *){
               UIView.animate(withDuration: duration, delay: 0, options: UIViewAnimationOptions.curveEaseInOut, animations: {
-                  toView?.bounds = CGRect(x: 0, y: 0, width: toViewWidth, height: toViewHeight)
+                toView?.frame = CGRect(x: 0, y: 0, width: toViewWidth, height: toViewHeight)
+//                  toView?.bounds = CGRect(x: 0, y: 0, width: toViewWidth, height: toViewHeight)
               }, completion: { (finished) in
                   transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
               })
@@ -50,9 +51,8 @@ class ZLAnimationController: NSObject,UIViewControllerAnimatedTransitioning{
         }
         //Dismissal 转场中不要将 toView 添加到 containerView
         if fromVc.isBeingDismissed {
-            let fromViewHeight = fromView?.frame.size.height
             UIView.animate(withDuration: duration, animations: {
-                fromView?.bounds = CGRect(x: 0, y: 0, width: 1, height: fromViewHeight!)
+                fromView?.bounds = CGRect(x: 0, y: 0, width: 1, height: 1)
             }, completion: { (finished) in
                 transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
             })

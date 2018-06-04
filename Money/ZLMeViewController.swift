@@ -10,25 +10,25 @@ import UIKit
 
 class ZLMeViewController: UIViewController {
 
+    var greenView:UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = UIColor.white
+        
+        greenView = UIView(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
+        greenView.backgroundColor = UIColor.green
+        self.view.addSubview(greenView)
     }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        UIView.animate(withDuration: 2, delay: 0, options: UIViewAnimationOptions.transitionCurlUp, animations: {
+            self.greenView.center = self.view.center
+        }) { (finished) in
+            self.greenView.backgroundColor = UIColor.red
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        }
     }
-    
+   
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

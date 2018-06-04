@@ -16,7 +16,10 @@ class ZLHomeViewController: BaseUIViewControllerPlan{
         ["title":"CATransform3D变换的应用","value":"ZLCATransform3DViewController"],
         ["title":"iOS CAAnimation动画体系的介绍","value":"ZLCAAnimationViewController"],
         ["title":"事务CATransaction","value":"ZLCATransactionViewController"],
-        ["title":"自定义转场动画","value":"ZLModalTransitionViewController"]
+        ["title":"自定义转场动画","value":"ZLModalTransitionViewController"],
+        ["title":"UIBezierPath","value":"ZLBezierPathViewController"],
+        ["title":"自定义转场动画","value":"ZLModalTransitionViewController"],
+    ["title":"圆环转圈","value":"ZLStaticCircleViewViewController"]
     ]
     var age:String?
     

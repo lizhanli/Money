@@ -50,10 +50,12 @@
 		7582B8A720B53D72002585CC /* ZLModalTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7582B8A020B53D72002585CC /* ZLModalTransitionDelegate.swift */; };
 		7582B8A820B53D72002585CC /* ZLAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7582B8A120B53D72002585CC /* ZLAnimationController.swift */; };
 		7582B8A920B53D72002585CC /* ZLPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7582B8A220B53D72002585CC /* ZLPresentationController.swift */; };
+		7582B8AB20B545A5002585CC /* ZLBezierPathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7582B8AA20B545A5002585CC /* ZLBezierPathViewController.swift */; };
 		75CD1D8E20B28DB400EE8B21 /* ZLTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD1D8D20B28DB400EE8B21 /* ZLTableView.swift */; };
 		75CD1D9020B290B100EE8B21 /* ZLHeadStackTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD1D8F20B290B100EE8B21 /* ZLHeadStackTableViewController.swift */; };
 		75CD1D9420B29FE300EE8B21 /* BaseUITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD1D9220B29FE300EE8B21 /* BaseUITableViewController.swift */; };
 		75CD1D9520B29FE300EE8B21 /* BaseUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD1D9320B29FE300EE8B21 /* BaseUIViewController.swift */; };
+		75F5012920C42AE700F1FED0 /* ZLStaticCircleViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F5012820C42AE700F1FED0 /* ZLStaticCircleViewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,10 +125,12 @@
 		7582B8A020B53D72002585CC /* ZLModalTransitionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLModalTransitionDelegate.swift; sourceTree = "<group>"; };
 		7582B8A120B53D72002585CC /* ZLAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLAnimationController.swift; sourceTree = "<group>"; };
 		7582B8A220B53D72002585CC /* ZLPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLPresentationController.swift; sourceTree = "<group>"; };
+		7582B8AA20B545A5002585CC /* ZLBezierPathViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLBezierPathViewController.swift; sourceTree = "<group>"; };
 		75CD1D8D20B28DB400EE8B21 /* ZLTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLTableView.swift; sourceTree = "<group>"; };
 		75CD1D8F20B290B100EE8B21 /* ZLHeadStackTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLHeadStackTableViewController.swift; sourceTree = "<group>"; };
 		75CD1D9220B29FE300EE8B21 /* BaseUITableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUITableViewController.swift; sourceTree = "<group>"; };
 		75CD1D9320B29FE300EE8B21 /* BaseUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUIViewController.swift; sourceTree = "<group>"; };
+		75F5012820C42AE700F1FED0 /* ZLStaticCircleViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLStaticCircleViewViewController.swift; sourceTree = "<group>"; };
 		90690B6F4C3A41289523E983 /* Pods-Money.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Money.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Money/Pods-Money.debug.xcconfig"; sourceTree = "<group>"; };
 		EA3006BAA188EDBD3B00CE44 /* Pods_Money.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Money.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB01CA6035F6665CC8BF5C60 /* Pods-Money.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Money.release.xcconfig"; path = "Pods/Target Support Files/Pods-Money/Pods-Money.release.xcconfig"; sourceTree = "<group>"; };
@@ -212,6 +216,7 @@
 				7548248620AE9A2D001D93CC /* HttpUtils.swift */,
 				7548248820AE9D3B001D93CC /* Consts.swift */,
 				75134C7320ADCE9200873E27 /* ZLHomeViewController.swift */,
+				75F5012820C42AE700F1FED0 /* ZLStaticCircleViewViewController.swift */,
 				7582B89820B53BF5002585CC /* ZLModalTransitionViewController.swift */,
 				75CD1D8F20B290B100EE8B21 /* ZLHeadStackTableViewController.swift */,
 				75CD1D8D20B28DB400EE8B21 /* ZLTableView.swift */,
@@ -308,6 +313,7 @@
 				7582B89B20B53D72002585CC /* ZLCAAnimationViewController.swift */,
 				7582B89C20B53D72002585CC /* ZLCATransactionViewController.swift */,
 				7582B89D20B53D72002585CC /* ZLCATransform3DViewController.swift */,
+				7582B8AA20B545A5002585CC /* ZLBezierPathViewController.swift */,
 			);
 			path = "动画";
 			sourceTree = "<group>";
@@ -509,11 +515,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7582B8AB20B545A5002585CC /* ZLBezierPathViewController.swift in Sources */,
 				7548249020AED426001D93CC /* ZLDownLoadViewController.swift in Sources */,
 				7582B8A420B53D72002585CC /* ZLCATransactionViewController.swift in Sources */,
 				75134C8120ADD1C900873E27 /* Public.swift in Sources */,
 				75134C1A20ADCBDF00873E27 /* ViewController.swift in Sources */,
 				75134C6320ADCD3A00873E27 /* ExtensionUIImage.swift in Sources */,
+				75F5012920C42AE700F1FED0 /* ZLStaticCircleViewViewController.swift in Sources */,
 				75134C1820ADCBDF00873E27 /* AppDelegate.swift in Sources */,
 				75134C6920ADCD3A00873E27 /* ExtensionArray.swift in Sources */,
 				75134C5E20ADCD3A00873E27 /* ExtensionDictionary.swift in Sources */,
