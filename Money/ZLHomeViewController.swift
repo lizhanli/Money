@@ -19,14 +19,19 @@ class ZLHomeViewController: BaseUIViewControllerPlan{
         ["title":"自定义转场动画","value":"ZLModalTransitionViewController"],
         ["title":"UIBezierPath","value":"ZLBezierPathViewController"],
         ["title":"自定义转场动画","value":"ZLModalTransitionViewController"],
-    ["title":"圆环转圈","value":"ZLStaticCircleViewViewController"]
+    ["title":"圆环转圈","value":"ZLStaticCircleViewViewController"],
+    ["title":"MVP","value":"ZLMVPViewController"],
+    ["title":"MVVM","value":"ZLMVVMViewController"],
+    ["title":"CDD","value":"ZLCDDViewController"],
+    ["title":"layout机制","value":"ZLLayoutViewController"],
+    ["title":"TableView动画效果","value":"ZLTableViewAnimationViewController"]
+
     ]
     var age:String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         cellArray = [UITableViewCell()]
-        
     }
     //MARK: -UITableViewDataSource
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -48,6 +53,10 @@ class ZLHomeViewController: BaseUIViewControllerPlan{
             let viewController = viewControllerClass.init()
         self.navigationController?.pushViewController(viewController, animated: true)
         }
+    }
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        logInfo("contentInset.top==\(scrollView.contentInset.top)")
+        logInfo("contentOffset.y===\(scrollView.contentOffset.y)")
     }
 }
 class ZLImageHeadView: UIView {

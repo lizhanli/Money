@@ -37,5 +37,20 @@ extension Array {
     func toStringNoFormat() -> String {
         return toString(format: false)
     }
-    
+}
+extension Array{
+    //选择排序（选择最小元素）
+    mutating func selectSort() {
+//        var array = [12,54,76,1,23,23,6]
+        [54,12,76]
+        for i in 0..<self.count {
+            var min = i
+            for j in i+1..<self.count {
+                if (self[j] as! Int) >= (self[min] as! Int){
+                    min = j
+                }
+            }
+            (self[min],self[i]) = (self[i],self[min])
+        }
+    }
 }
