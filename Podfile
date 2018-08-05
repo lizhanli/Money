@@ -5,7 +5,7 @@ target "Money" do
     pod 'SnapKit'
     pod 'IQKeyboardManager','>= 3.2.2'
     pod 'Alamofire', '~>4.0.0'
-
+    pod 'LazyScroll'
 end
 post_install do |installer|
     

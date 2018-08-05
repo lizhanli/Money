@@ -24,8 +24,12 @@ class ZLHomeViewController: BaseUIViewControllerPlan{
     ["title":"MVVM","value":"ZLMVVMViewController"],
     ["title":"CDD","value":"ZLCDDViewController"],
     ["title":"layout机制","value":"ZLLayoutViewController"],
-    ["title":"TableView动画效果","value":"ZLTableViewAnimationViewController"]
-
+    ["title":"TableView动画效果","value":"ZLTableViewAnimationViewController"],
+    ["title":"页面层叠效果","value":"ZLStackViewController"],
+    ["title":"自定义pop","value":"ZLCustomPopViewController"],
+    ["title":"自定义pageVC","value":"ZLPageViewController"],
+    ["title":"语音播报","value":"ZLAVSpeechSynthesizer"],
+    ["title":"苹果核","value":"ZLLazyScrollViewController"]
     ]
     var age:String?
     

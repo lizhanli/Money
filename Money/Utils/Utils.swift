@@ -22,6 +22,43 @@ class Utils: NSObject {
     static func isEmptyDictionary(_ dic: [String : Any]?) -> Bool {
         return (dic?.count ?? 0) == 0
     }
-
+    
+    func getCurrentViewController() ->UIViewController?{
+        //app默认windowLevel是UIWindowLevelNormal，如果不是，找到它
+        var resultVC:UIViewController? = nil
+        var window = UIApplication.shared.keyWindow
+        if window?.windowLevel != UIWindowLevelNormal {
+            let windows = UIApplication.shared.windows
+            for item in windows{
+                if item.windowLevel == UIWindowLevelNormal{
+                    window = item
+                    break
+                }
+            }
+        }
+        var nextResponder:UIResponder? = nil
+        let appRootVC = window?.rootViewController
+        //1、通过present弹出VC，appRootVC.presentedViewController不为nil
+        if appRootVC?.presentedViewController != nil{
+            nextResponder = appRootVC?.presentedViewController
+        }else{
+            //2、通过navigationcontroller弹出VC
+            let frontView = window?.subviews.first
+            nextResponder = frontView?.next
+        }
+        //1、tabBarController
+        if nextResponder?.isKind(of: UITabBarController.self) == true {
+            let tabbar = nextResponder as? UITabBarController
+            let nav = tabbar?.selectedViewController
+            resultVC = nav?.childViewControllers.last
+        }else if nextResponder?.isKind(of: UINavigationController.self) == true{
+            //2、navigationController
+            let nav = nextResponder as? UIViewController
+            resultVC = nav?.childViewControllers.last
+        }else{
+            resultVC = nextResponder as? UIViewController
+        }
+        return resultVC
+    }
     
 }

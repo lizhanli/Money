@@ -8,6 +8,15 @@
 
 import UIKit
 
+protocol Prototype {
+    func clone() -> Prototype
+}
+struct Product: Prototype {
+    var title: String
+    func clone() -> Prototype {
+        return Product(title: title)
+    }
+}
 public class BinarySearchTree<T: Comparable> {
     private(set) public var value: T
     private(set) public var parent: BinarySearchTree?
@@ -103,26 +112,32 @@ class ZLMidViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = ZLColor.Background
-        self.zl_configTitle(title: "这是测试")
-        setLeftBarButtonItem(title: "返回")
-        present = ZLTestPresent()
-        present?.currentVC = self
-        testView = ZLTestView(frame: self.view.bounds)
-        self.view.addSubview(testView!)
-        present?.testView = testView
-        present?.model = model
-        present?.loadData()
-        testView?.delegate = present
+       
         
-        let tree = BinarySearchTree<Int>(value: 7)
-        tree.insert(2)
+//        self.zl_configTitle(title: "这是测试")
+//        setLeftBarButtonItem(title: "返回")
+//        present = ZLTestPresent()
+//        present?.currentVC = self
+//        testView = ZLTestView(frame: self.view.bounds)
+//        self.view.addSubview(testView!)
+//        present?.testView = testView
+//        present?.model = model
+//        present?.loadData()
+//        testView?.delegate = present
+        
+//        var p1 = Product(title: "p1")
+//        p1.title = "p2"
+//        let p2 = p1.clone()
+//        // OUTPUT: p1
+//        logInfo("\((p2 as? Product)?.title)")
+//        let tree = BinarySearchTree<Int>(value: 7)
+//        tree.insert(2)
 //        tree.insert(5)
 //        tree.insert(10)
 //        tree.insert(9)
 //        tree.insert(1)
         
-        logInfo("tree==\(tree)")
-                
+        
         var array = [12,54,76,1,23,23,6]
         array.selectSort()
         logInfo("array==\(array)")

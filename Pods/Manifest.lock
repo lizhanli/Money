@@ -1,24 +1,28 @@
 PODS:
   - Alamofire (4.0.1)
   - IQKeyboardManager (4.0.9)
+  - LazyScroll (0.0.2)
   - SnapKit (3.0.2)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0.0)
   - IQKeyboardManager (>= 3.2.2)
+  - LazyScroll
   - SnapKit
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - IQKeyboardManager
+    - LazyScroll
     - SnapKit
 
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
   IQKeyboardManager: 322c7405df3eb5f7e50dede32ea937bf3d4364e0
+  LazyScroll: 614022689b8e3b93c7bbe268c1a47b76e4265941
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
 
-PODFILE CHECKSUM: ae741ac6bef7369f03dbb852f550ab683a42bb10
+PODFILE CHECKSUM: 449cd085aa79b740b075123b3247f8c1db899ab3
 
 COCOAPODS: 1.5.0.beta.1

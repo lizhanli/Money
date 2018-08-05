@@ -137,3 +137,15 @@ extension UIView{
         return zl_currentCenter.y
     }
 }
+extension UIView{
+    //MARK: -截屏
+    func takeSnapShot() ->UIImage?{
+     UIGraphicsBeginImageContextWithOptions(self.bounds.size, true, UIScreen.main.scale)
+        if let context = UIGraphicsGetCurrentContext(){
+            self.layer.render(in: context)
+        }
+        let snapshot = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return snapshot
+    }
+}
