@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		53F0006C716CCCA823F2CE4D /* Pods_Money.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3006BAA188EDBD3B00CE44 /* Pods_Money.framework */; };
+		750BAD5121ECB523000EB4F0 /* ZLPrototypePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750BAD5021ECB523000EB4F0 /* ZLPrototypePattern.swift */; };
 		75134C1820ADCBDF00873E27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75134C1720ADCBDF00873E27 /* AppDelegate.swift */; };
 		75134C1A20ADCBDF00873E27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75134C1920ADCBDF00873E27 /* ViewController.swift */; };
 		75134C1D20ADCBDF00873E27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75134C1B20ADCBDF00873E27 /* Main.storyboard */; };
@@ -88,6 +89,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		750BAD5021ECB523000EB4F0 /* ZLPrototypePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLPrototypePattern.swift; sourceTree = "<group>"; };
+		750BAD5221ECB57F000EB4F0 /* Pattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Pattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		75134C1420ADCBDF00873E27 /* Money.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Money.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75134C1720ADCBDF00873E27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75134C1920ADCBDF00873E27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -201,6 +204,15 @@
 				EA3006BAA188EDBD3B00CE44 /* Pods_Money.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		750BAD4F21ECB4C2000EB4F0 /* 原型模式 */ = {
+			isa = PBXGroup;
+			children = (
+				750BAD5221ECB57F000EB4F0 /* Pattern.playground */,
+				750BAD5021ECB523000EB4F0 /* ZLPrototypePattern.swift */,
+			);
+			path = "原型模式";
 			sourceTree = "<group>";
 		};
 		75134C0B20ADCBDF00873E27 = {
@@ -398,6 +410,7 @@
 		75FFBD0520D951DA00412BCA /* 设计模式 */ = {
 			isa = PBXGroup;
 			children = (
+				750BAD4F21ECB4C2000EB4F0 /* 原型模式 */,
 				75FFBD0620D951F200412BCA /* ZLMVPViewController.swift */,
 				75616E5620DA91060004A374 /* ZLMVVMViewController.swift */,
 				75616E5A20DC9CA20004A374 /* ZLCDDViewController.swift */,
@@ -603,6 +616,7 @@
 				75134C6920ADCD3A00873E27 /* ExtensionArray.swift in Sources */,
 				75134C5E20ADCD3A00873E27 /* ExtensionDictionary.swift in Sources */,
 				75CD1D9020B290B100EE8B21 /* ZLHeadStackTableViewController.swift in Sources */,
+				750BAD5121ECB523000EB4F0 /* ZLPrototypePattern.swift in Sources */,
 				75134C6020ADCD3A00873E27 /* ExtensionUIButton.swift in Sources */,
 				7548248920AE9D3B001D93CC /* Consts.swift in Sources */,
 				75134C6820ADCD3A00873E27 /* ExtensionUIViewController.swift in Sources */,
