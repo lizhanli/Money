@@ -11,6 +11,8 @@ import UIKit
 class ZLHomeViewController: BaseUIViewControllerPlan{
     
     let dataArray = [
+        ["title": "视图动画", "value": "ZLAnimationViewController"],
+        ["title": "事件", "value": "ZLUITouchViewController"],
         ["title":"断点续传","value":"ZLDownLoadViewController"],
         ["title":"头部层叠效果","value":"ZLHeadStackTableViewController"],
         ["title":"CATransform3D变换的应用","value":"ZLCATransform3DViewController"],
@@ -29,7 +31,10 @@ class ZLHomeViewController: BaseUIViewControllerPlan{
     ["title":"自定义pop","value":"ZLCustomPopViewController"],
     ["title":"自定义pageVC","value":"ZLPageViewController"],
     ["title":"语音播报","value":"ZLAVSpeechSynthesizer"],
-    ["title":"苹果核","value":"ZLLazyScrollViewController"]
+    ["title":"苹果核","value":"ZLLazyScrollViewController"],
+    ["title": "图片拉伸", "value": "ZLStretchImageController"],
+    ["title": "历史记录", "value": "ZLHistoryViewController"],
+    ["title": "shapeLayer", "value": "ZLCustomShapeViewController"]
     ]
     var age:String?
     
@@ -59,8 +64,8 @@ class ZLHomeViewController: BaseUIViewControllerPlan{
         }
     }
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        logInfo("contentInset.top==\(scrollView.contentInset.top)")
-        logInfo("contentOffset.y===\(scrollView.contentOffset.y)")
+//        logInfo("contentInset.top==\(scrollView.contentInset.top)")
+//        logInfo("contentOffset.y===\(scrollView.contentOffset.y)")
     }
 }
 class ZLImageHeadView: UIView {
