@@ -2,12 +2,15 @@
 <Workspace
    version = "1.0">
    <Group
-      location = "container:"
-      name = "New Group">
+      location = "group:Modules"
+      name = "Modules">
       <FileRef
-         location = "group:Money.xcodeproj">
+         location = "group:ZLAccount/ZLAccount.xcodeproj">
       </FileRef>
    </Group>
+   <FileRef
+      location = "group:Money.xcodeproj">
+   </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>

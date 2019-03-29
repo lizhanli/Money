@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ZLAccount
 
 class ZLHomeViewController: BaseUIViewControllerPlan{
     
@@ -42,6 +43,10 @@ class ZLHomeViewController: BaseUIViewControllerPlan{
     override func viewDidLoad() {
         super.viewDidLoad()
         cellArray = [UITableViewCell()]
+        
+        let vc = AccountViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+        
     }
     //MARK: -UITableViewDataSource
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

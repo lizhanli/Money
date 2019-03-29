@@ -10,6 +10,7 @@
 		53F0006C716CCCA823F2CE4D /* Pods_Money.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3006BAA188EDBD3B00CE44 /* Pods_Money.framework */; };
 		7508DE62222825C700E04F16 /* ZLUITouchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7508DE61222825C700E04F16 /* ZLUITouchViewController.swift */; };
 		750BAD5121ECB523000EB4F0 /* ZLPrototypePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750BAD5021ECB523000EB4F0 /* ZLPrototypePattern.swift */; };
+		750D7131224E167400EF9B73 /* ZLAccount.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750D7130224E167400EF9B73 /* ZLAccount.framework */; };
 		75134C1820ADCBDF00873E27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75134C1720ADCBDF00873E27 /* AppDelegate.swift */; };
 		75134C1A20ADCBDF00873E27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75134C1920ADCBDF00873E27 /* ViewController.swift */; };
 		75134C1D20ADCBDF00873E27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75134C1B20ADCBDF00873E27 /* Main.storyboard */; };
@@ -101,6 +102,7 @@
 		7508DE61222825C700E04F16 /* ZLUITouchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLUITouchViewController.swift; sourceTree = "<group>"; };
 		750BAD5021ECB523000EB4F0 /* ZLPrototypePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLPrototypePattern.swift; sourceTree = "<group>"; };
 		750BAD5221ECB57F000EB4F0 /* Pattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Pattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		750D7130224E167400EF9B73 /* ZLAccount.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ZLAccount.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75134C1420ADCBDF00873E27 /* Money.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Money.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75134C1720ADCBDF00873E27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75134C1920ADCBDF00873E27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				750D7131224E167400EF9B73 /* ZLAccount.framework in Frameworks */,
 				53F0006C716CCCA823F2CE4D /* Pods_Money.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,6 +222,7 @@
 		51531B3A7238721CDFD049A1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				750D7130224E167400EF9B73 /* ZLAccount.framework */,
 				EA3006BAA188EDBD3B00CE44 /* Pods_Money.framework */,
 			);
 			name = Frameworks;
@@ -241,9 +245,17 @@
 			path = "原型模式";
 			sourceTree = "<group>";
 		};
+		750D7109224E149F00EF9B73 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
 		75134C0B20ADCBDF00873E27 = {
 			isa = PBXGroup;
 			children = (
+				750D7109224E149F00EF9B73 /* Modules */,
 				75134C1620ADCBDF00873E27 /* Money */,
 				75134C2B20ADCBE000873E27 /* MoneyTests */,
 				75134C3620ADCBE000873E27 /* MoneyUITests */,
