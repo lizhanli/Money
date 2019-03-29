@@ -11,6 +11,7 @@ import UIKit
 class ZLHomeViewController: BaseUIViewControllerPlan{
     
     let dataArray = [
+        ["title": "searchBar", "value": "ZLSearchBarViewController"],
         ["title": "视图动画", "value": "ZLAnimationViewController"],
         ["title": "事件", "value": "ZLUITouchViewController"],
         ["title":"断点续传","value":"ZLDownLoadViewController"],
@@ -64,6 +65,10 @@ class ZLHomeViewController: BaseUIViewControllerPlan{
         }
     }
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+//        let color = UIColor(red: scrollView.contentOffset.y / 255.0, green: 1, blue: 1, alpha: 1)
+//    self.navigationController?.navigationBar.setNavigationBackgroundColor(backgroundColor: color)
+        
 //        logInfo("contentInset.top==\(scrollView.contentInset.top)")
 //        logInfo("contentOffset.y===\(scrollView.contentOffset.y)")
     }

@@ -41,6 +41,7 @@
 		75134C8720ADD1DA00873E27 /* ZLTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75134C8420ADD1DA00873E27 /* ZLTabBarController.swift */; };
 		75134C8820ADD1DA00873E27 /* ZLTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75134C8520ADD1DA00873E27 /* ZLTabBar.swift */; };
 		75136BE7222E10E10057913C /* ZLAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75136BE6222E10E10057913C /* ZLAnimationViewController.swift */; };
+		75187B9E2237BA0800CFF980 /* ZLSearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75187B9D2237BA0800CFF980 /* ZLSearchBarViewController.swift */; };
 		75273A9F2111AB48000602FE /* ZLLazyScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75273A9E2111AB48000602FE /* ZLLazyScrollViewController.swift */; };
 		752ADF682109B54C00746601 /* ZLAVSpeechSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752ADF672109B54C00746601 /* ZLAVSpeechSynthesizer.swift */; };
 		7539EEC020F47A890072249F /* ZLStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7539EEBF20F47A890072249F /* ZLStackViewController.swift */; };
@@ -73,6 +74,7 @@
 		75CD1D9520B29FE300EE8B21 /* BaseUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD1D9320B29FE300EE8B21 /* BaseUIViewController.swift */; };
 		75DD4B9D20EE1CB5002908F7 /* ZLTableViewAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DD4B9C20EE1CB5002908F7 /* ZLTableViewAnimationViewController.swift */; };
 		75DD4BA020EF3799002908F7 /* Blurry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DD4B9F20EF3799002908F7 /* Blurry.swift */; };
+		75EC332B2244737800787F73 /* ExtensionUINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EC332A2244737800787F73 /* ExtensionUINavigationBar.swift */; };
 		75ED1DB82107772500EB55A9 /* ZLPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED1DB72107772500EB55A9 /* ZLPageViewController.swift */; };
 		75F5012920C42AE700F1FED0 /* ZLStaticCircleViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F5012820C42AE700F1FED0 /* ZLStaticCircleViewViewController.swift */; };
 		75FFBD0720D951F200412BCA /* ZLMVPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FFBD0620D951F200412BCA /* ZLMVPViewController.swift */; };
@@ -137,6 +139,7 @@
 		75134C8420ADD1DA00873E27 /* ZLTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLTabBarController.swift; sourceTree = "<group>"; };
 		75134C8520ADD1DA00873E27 /* ZLTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLTabBar.swift; sourceTree = "<group>"; };
 		75136BE6222E10E10057913C /* ZLAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLAnimationViewController.swift; sourceTree = "<group>"; };
+		75187B9D2237BA0800CFF980 /* ZLSearchBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLSearchBarViewController.swift; sourceTree = "<group>"; };
 		75273A9E2111AB48000602FE /* ZLLazyScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLLazyScrollViewController.swift; sourceTree = "<group>"; };
 		752ADF672109B54C00746601 /* ZLAVSpeechSynthesizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLAVSpeechSynthesizer.swift; sourceTree = "<group>"; };
 		7539EEBF20F47A890072249F /* ZLStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLStackViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +172,7 @@
 		75CD1D9320B29FE300EE8B21 /* BaseUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUIViewController.swift; sourceTree = "<group>"; };
 		75DD4B9C20EE1CB5002908F7 /* ZLTableViewAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLTableViewAnimationViewController.swift; sourceTree = "<group>"; };
 		75DD4B9F20EF3799002908F7 /* Blurry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blurry.swift; sourceTree = "<group>"; };
+		75EC332A2244737800787F73 /* ExtensionUINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUINavigationBar.swift; sourceTree = "<group>"; };
 		75ED1DB72107772500EB55A9 /* ZLPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLPageViewController.swift; sourceTree = "<group>"; };
 		75F5012820C42AE700F1FED0 /* ZLStaticCircleViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLStaticCircleViewViewController.swift; sourceTree = "<group>"; };
 		75FFBD0620D951F200412BCA /* ZLMVPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLMVPViewController.swift; sourceTree = "<group>"; };
@@ -282,6 +286,7 @@
 				75ABE2222219A1F700B63545 /* SearchCell.swift */,
 				75ABE2232219A1F700B63545 /* SearchCell.xib */,
 				75134C7320ADCE9200873E27 /* ZLHomeViewController.swift */,
+				75187B9D2237BA0800CFF980 /* ZLSearchBarViewController.swift */,
 				75A3B789221C509B005B50AE /* ZLCustomShapeViewController.swift */,
 				759CE43522111AD100F74AF5 /* ZLStretchImageController.swift */,
 				75273A9E2111AB48000602FE /* ZLLazyScrollViewController.swift */,
@@ -340,6 +345,7 @@
 				75134C5A20ADCD3A00873E27 /* ExtensionUILabel.swift */,
 				75134C5B20ADCD3A00873E27 /* ExtensionUIViewController.swift */,
 				75134C5C20ADCD3A00873E27 /* ExtensionArray.swift */,
+				75EC332A2244737800787F73 /* ExtensionUINavigationBar.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -646,6 +652,7 @@
 				75134C6920ADCD3A00873E27 /* ExtensionArray.swift in Sources */,
 				75134C5E20ADCD3A00873E27 /* ExtensionDictionary.swift in Sources */,
 				75CD1D9020B290B100EE8B21 /* ZLHeadStackTableViewController.swift in Sources */,
+				75187B9E2237BA0800CFF980 /* ZLSearchBarViewController.swift in Sources */,
 				750BAD5121ECB523000EB4F0 /* ZLPrototypePattern.swift in Sources */,
 				75134C6020ADCD3A00873E27 /* ExtensionUIButton.swift in Sources */,
 				7548248920AE9D3B001D93CC /* Consts.swift in Sources */,
@@ -689,6 +696,7 @@
 				75134C5D20ADCD3A00873E27 /* ExtensionUIBezierPath.swift in Sources */,
 				75134C8620ADD1DA00873E27 /* ZLNavViewController.swift in Sources */,
 				75ABE2242219A1F700B63545 /* SearchCell.swift in Sources */,
+				75EC332B2244737800787F73 /* ExtensionUINavigationBar.swift in Sources */,
 				75134C8020ADD1C900873E27 /* Utils.swift in Sources */,
 				75FFBD0720D951F200412BCA /* ZLMVPViewController.swift in Sources */,
 				75134C7F20ADD1C900873E27 /* ZLColor.swift in Sources */,
