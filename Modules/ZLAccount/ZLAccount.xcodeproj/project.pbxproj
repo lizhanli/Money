@@ -7,84 +7,81 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		750D711E224E15DF00EF9B73 /* ZLAccount.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750D7114224E15DE00EF9B73 /* ZLAccount.framework */; };
-		750D7123224E15DF00EF9B73 /* ZLAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750D7122224E15DF00EF9B73 /* ZLAccountTests.swift */; };
-		750D7125224E15DF00EF9B73 /* ZLAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = 750D7117224E15DE00EF9B73 /* ZLAccount.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		750D712F224E160200EF9B73 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750D712E224E160200EF9B73 /* AccountViewController.swift */; };
+		750AC6B72254A4A400188719 /* ZLAccount.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750AC6AD2254A4A400188719 /* ZLAccount.framework */; };
+		750AC6BC2254A4A400188719 /* ZLAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750AC6BB2254A4A400188719 /* ZLAccountTests.swift */; };
+		750AC6BE2254A4A400188719 /* ZLAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = 750AC6B02254A4A400188719 /* ZLAccount.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		750D711F224E15DF00EF9B73 /* PBXContainerItemProxy */ = {
+		750AC6B82254A4A400188719 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 750D710B224E15DE00EF9B73 /* Project object */;
+			containerPortal = 750AC6A42254A4A400188719 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 750D7113224E15DE00EF9B73;
+			remoteGlobalIDString = 750AC6AC2254A4A400188719;
 			remoteInfo = ZLAccount;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		750D7114224E15DE00EF9B73 /* ZLAccount.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZLAccount.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		750D7117224E15DE00EF9B73 /* ZLAccount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLAccount.h; sourceTree = "<group>"; };
-		750D7118224E15DE00EF9B73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		750D711D224E15DF00EF9B73 /* ZLAccountTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZLAccountTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		750D7122224E15DF00EF9B73 /* ZLAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLAccountTests.swift; sourceTree = "<group>"; };
-		750D7124224E15DF00EF9B73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		750D712E224E160200EF9B73 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		750AC6AD2254A4A400188719 /* ZLAccount.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZLAccount.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		750AC6B02254A4A400188719 /* ZLAccount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLAccount.h; sourceTree = "<group>"; };
+		750AC6B12254A4A400188719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		750AC6B62254A4A400188719 /* ZLAccountTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZLAccountTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		750AC6BB2254A4A400188719 /* ZLAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLAccountTests.swift; sourceTree = "<group>"; };
+		750AC6BD2254A4A400188719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		750D7111224E15DE00EF9B73 /* Frameworks */ = {
+		750AC6AA2254A4A400188719 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		750D711A224E15DF00EF9B73 /* Frameworks */ = {
+		750AC6B32254A4A400188719 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				750D711E224E15DF00EF9B73 /* ZLAccount.framework in Frameworks */,
+				750AC6B72254A4A400188719 /* ZLAccount.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		750D710A224E15DE00EF9B73 = {
+		750AC6A32254A4A400188719 = {
 			isa = PBXGroup;
 			children = (
-				750D7116224E15DE00EF9B73 /* ZLAccount */,
-				750D7121224E15DF00EF9B73 /* ZLAccountTests */,
-				750D7115224E15DE00EF9B73 /* Products */,
+				750AC6AF2254A4A400188719 /* ZLAccount */,
+				750AC6BA2254A4A400188719 /* ZLAccountTests */,
+				750AC6AE2254A4A400188719 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		750D7115224E15DE00EF9B73 /* Products */ = {
+		750AC6AE2254A4A400188719 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				750D7114224E15DE00EF9B73 /* ZLAccount.framework */,
-				750D711D224E15DF00EF9B73 /* ZLAccountTests.xctest */,
+				750AC6AD2254A4A400188719 /* ZLAccount.framework */,
+				750AC6B62254A4A400188719 /* ZLAccountTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		750D7116224E15DE00EF9B73 /* ZLAccount */ = {
+		750AC6AF2254A4A400188719 /* ZLAccount */ = {
 			isa = PBXGroup;
 			children = (
-				750D7117224E15DE00EF9B73 /* ZLAccount.h */,
-				750D7118224E15DE00EF9B73 /* Info.plist */,
-				750D712E224E160200EF9B73 /* AccountViewController.swift */,
+				750AC6B02254A4A400188719 /* ZLAccount.h */,
+				750AC6B12254A4A400188719 /* Info.plist */,
 			);
 			path = ZLAccount;
 			sourceTree = "<group>";
 		};
-		750D7121224E15DF00EF9B73 /* ZLAccountTests */ = {
+		750AC6BA2254A4A400188719 /* ZLAccountTests */ = {
 			isa = PBXGroup;
 			children = (
-				750D7122224E15DF00EF9B73 /* ZLAccountTests.swift */,
-				750D7124224E15DF00EF9B73 /* Info.plist */,
+				750AC6BB2254A4A400188719 /* ZLAccountTests.swift */,
+				750AC6BD2254A4A400188719 /* Info.plist */,
 			);
 			path = ZLAccountTests;
 			sourceTree = "<group>";
@@ -92,25 +89,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		750D710F224E15DE00EF9B73 /* Headers */ = {
+		750AC6A82254A4A400188719 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				750D7125224E15DF00EF9B73 /* ZLAccount.h in Headers */,
+				750AC6BE2254A4A400188719 /* ZLAccount.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		750D7113224E15DE00EF9B73 /* ZLAccount */ = {
+		750AC6AC2254A4A400188719 /* ZLAccount */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 750D7128224E15DF00EF9B73 /* Build configuration list for PBXNativeTarget "ZLAccount" */;
+			buildConfigurationList = 750AC6C12254A4A500188719 /* Build configuration list for PBXNativeTarget "ZLAccount" */;
 			buildPhases = (
-				750D710F224E15DE00EF9B73 /* Headers */,
-				750D7110224E15DE00EF9B73 /* Sources */,
-				750D7111224E15DE00EF9B73 /* Frameworks */,
-				750D7112224E15DE00EF9B73 /* Resources */,
+				750AC6A82254A4A400188719 /* Headers */,
+				750AC6A92254A4A400188719 /* Sources */,
+				750AC6AA2254A4A400188719 /* Frameworks */,
+				750AC6AB2254A4A400188719 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -118,73 +115,72 @@
 			);
 			name = ZLAccount;
 			productName = ZLAccount;
-			productReference = 750D7114224E15DE00EF9B73 /* ZLAccount.framework */;
+			productReference = 750AC6AD2254A4A400188719 /* ZLAccount.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		750D711C224E15DF00EF9B73 /* ZLAccountTests */ = {
+		750AC6B52254A4A400188719 /* ZLAccountTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 750D712B224E15DF00EF9B73 /* Build configuration list for PBXNativeTarget "ZLAccountTests" */;
+			buildConfigurationList = 750AC6C42254A4A500188719 /* Build configuration list for PBXNativeTarget "ZLAccountTests" */;
 			buildPhases = (
-				750D7119224E15DF00EF9B73 /* Sources */,
-				750D711A224E15DF00EF9B73 /* Frameworks */,
-				750D711B224E15DF00EF9B73 /* Resources */,
+				750AC6B22254A4A400188719 /* Sources */,
+				750AC6B32254A4A400188719 /* Frameworks */,
+				750AC6B42254A4A400188719 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				750D7120224E15DF00EF9B73 /* PBXTargetDependency */,
+				750AC6B92254A4A400188719 /* PBXTargetDependency */,
 			);
 			name = ZLAccountTests;
 			productName = ZLAccountTests;
-			productReference = 750D711D224E15DF00EF9B73 /* ZLAccountTests.xctest */;
+			productReference = 750AC6B62254A4A400188719 /* ZLAccountTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		750D710B224E15DE00EF9B73 /* Project object */ = {
+		750AC6A42254A4A400188719 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Marsli;
 				TargetAttributes = {
-					750D7113224E15DE00EF9B73 = {
+					750AC6AC2254A4A400188719 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
 					};
-					750D711C224E15DF00EF9B73 = {
+					750AC6B52254A4A400188719 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = 750D710E224E15DE00EF9B73 /* Build configuration list for PBXProject "ZLAccount" */;
+			buildConfigurationList = 750AC6A72254A4A400188719 /* Build configuration list for PBXProject "ZLAccount" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 750D710A224E15DE00EF9B73;
-			productRefGroup = 750D7115224E15DE00EF9B73 /* Products */;
+			mainGroup = 750AC6A32254A4A400188719;
+			productRefGroup = 750AC6AE2254A4A400188719 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				750D7113224E15DE00EF9B73 /* ZLAccount */,
-				750D711C224E15DF00EF9B73 /* ZLAccountTests */,
+				750AC6AC2254A4A400188719 /* ZLAccount */,
+				750AC6B52254A4A400188719 /* ZLAccountTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		750D7112224E15DE00EF9B73 /* Resources */ = {
+		750AC6AB2254A4A400188719 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		750D711B224E15DF00EF9B73 /* Resources */ = {
+		750AC6B42254A4A400188719 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -194,34 +190,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		750D7110224E15DE00EF9B73 /* Sources */ = {
+		750AC6A92254A4A400188719 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				750D712F224E160200EF9B73 /* AccountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		750D7119224E15DF00EF9B73 /* Sources */ = {
+		750AC6B22254A4A400188719 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				750D7123224E15DF00EF9B73 /* ZLAccountTests.swift in Sources */,
+				750AC6BC2254A4A400188719 /* ZLAccountTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		750D7120224E15DF00EF9B73 /* PBXTargetDependency */ = {
+		750AC6B92254A4A400188719 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 750D7113224E15DE00EF9B73 /* ZLAccount */;
-			targetProxy = 750D711F224E15DF00EF9B73 /* PBXContainerItemProxy */;
+			target = 750AC6AC2254A4A400188719 /* ZLAccount */;
+			targetProxy = 750AC6B82254A4A400188719 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		750D7126224E15DF00EF9B73 /* Debug */ = {
+		750AC6BF2254A4A500188719 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -285,7 +280,7 @@
 			};
 			name = Debug;
 		};
-		750D7127224E15DF00EF9B73 /* Release */ = {
+		750AC6C02254A4A500188719 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -343,10 +338,9 @@
 			};
 			name = Release;
 		};
-		750D7129224E15DF00EF9B73 /* Debug */ = {
+		750AC6C22254A4A500188719 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -355,7 +349,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ZLAccount/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -364,16 +357,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = YHFUNDS.ZLAccount;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		750D712A224E15DF00EF9B73 /* Release */ = {
+		750AC6C32254A4A500188719 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -382,7 +373,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ZLAccount/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,14 +382,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		750D712C224E15DF00EF9B73 /* Debug */ = {
+		750AC6C52254A4A500188719 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ZLAccountTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -414,10 +403,9 @@
 			};
 			name = Debug;
 		};
-		750D712D224E15DF00EF9B73 /* Release */ = {
+		750AC6C62254A4A500188719 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ZLAccountTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -435,34 +423,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		750D710E224E15DE00EF9B73 /* Build configuration list for PBXProject "ZLAccount" */ = {
+		750AC6A72254A4A400188719 /* Build configuration list for PBXProject "ZLAccount" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				750D7126224E15DF00EF9B73 /* Debug */,
-				750D7127224E15DF00EF9B73 /* Release */,
+				750AC6BF2254A4A500188719 /* Debug */,
+				750AC6C02254A4A500188719 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		750D7128224E15DF00EF9B73 /* Build configuration list for PBXNativeTarget "ZLAccount" */ = {
+		750AC6C12254A4A500188719 /* Build configuration list for PBXNativeTarget "ZLAccount" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				750D7129224E15DF00EF9B73 /* Debug */,
-				750D712A224E15DF00EF9B73 /* Release */,
+				750AC6C22254A4A500188719 /* Debug */,
+				750AC6C32254A4A500188719 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		750D712B224E15DF00EF9B73 /* Build configuration list for PBXNativeTarget "ZLAccountTests" */ = {
+		750AC6C42254A4A500188719 /* Build configuration list for PBXNativeTarget "ZLAccountTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				750D712C224E15DF00EF9B73 /* Debug */,
-				750D712D224E15DF00EF9B73 /* Release */,
+				750AC6C52254A4A500188719 /* Debug */,
+				750AC6C62254A4A500188719 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 750D710B224E15DE00EF9B73 /* Project object */;
+	rootObject = 750AC6A42254A4A400188719 /* Project object */;
 }

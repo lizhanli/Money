@@ -15,29 +15,85 @@ class ZLTabBar: UITabBar {
     var btn:UIButton!
     var zlTabBarDelegate:ZLTabBarProtocol?
     
+    lazy var shapeLayer: CAShapeLayer = {
+        let layer = CAShapeLayer()
+        layer.fillColor = UIColor.clear.cgColor
+        layer.strokeColor = UIColor.red.cgColor
+        layer.lineWidth = 1
+        layer.frame = self.bounds
+        self.layer.addSublayer(layer)
+        return layer
+    }()
+    
+    lazy var shapeLayer2: CAShapeLayer = {
+        let layer = CAShapeLayer()
+        layer.strokeColor = UIColor.red.cgColor
+        layer.lineWidth = 1
+        layer.fillColor = UIColor.clear.cgColor
+        layer.frame = self.bounds
+        self.layer.addSublayer(layer)
+        return layer
+    }()
+    
+    lazy var shapeLayer3: CAShapeLayer = {
+        let layer = CAShapeLayer()
+        layer.strokeColor = UIColor.red.cgColor
+        layer.lineWidth = 1
+        layer.fillColor = UIColor.clear.cgColor
+        layer.frame = self.bounds
+        self.layer.addSublayer(layer)
+        return layer
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         creatButton()
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func creatButton(){
+    fileprivate func addLineView(itemW: CGFloat) {
+        
+        let path = UIBezierPath()
+        path.move(to: CGPoint(x: 0, y: 0))
+        path.addLine(to: CGPoint(x: ZLScreenWidth * 0.5 - itemW * 0.5, y: 0))
+        path.addCurve(to: CGPoint(x: ZLScreenWidth * 0.5 + itemW * 0.5, y: 0), controlPoint1: CGPoint(x: ZLScreenWidth * 0.5 + itemW * 0.25, y: -10), controlPoint2: CGPoint(x: ZLScreenWidth * 0.5 - itemW * 0.25, y: -10))
+        
+        shapeLayer.path = path.cgPath
+        
+        
+//        let path = UIBezierPath()
+////        path.move(to: CGPoint(x: 0, y: 0))
+////        path.addLine(to: CGPoint(x: ZLScreenWidth * 0.5 - itemW * 0.5, y: 0))
+//        path.addArc(withCenter: CGPoint(x: ZLScreenWidth * 0.5 - itemW * 0.5, y: -150), radius: 150, startAngle: CGFloat(Double.pi * 0.404), endAngle: CGFloat(Double.pi * 0.5), clockwise: true)
+//        shapeLayer.path = path.cgPath
+//
+//        let path2 = UIBezierPath()
+//        path2.addArc(withCenter: CGPoint(x: ZLScreenWidth * 0.5 + itemW * 0.5, y: -150), radius: 150, startAngle: CGFloat(Double.pi * 0.5), endAngle: CGFloat(Double.pi * 0.604), clockwise: true)
+//        shapeLayer2.path = path2.cgPath
+//
+//        let path3 = UIBezierPath()
+//        path3.addArc(withCenter: CGPoint(x: ZLScreenWidth * 0.5, y: 50), radius: 59.5, startAngle: CGFloat(Double.pi * -0.604), endAngle: CGFloat(Double.pi * -0.404), clockwise: true)
+//        shapeLayer3.path = path3.cgPath
+        
+    }
+    
+    private func creatButton() {
         let itemW = ZLScreenWidth / CGFloat((self.items?.count ?? 0) + 1)
-        let image = UIView.zl_createImage(size: CGSize(width: itemW, height: itemW), fillColor: ZLColor.Green_Dark, withCorner: itemW * 0.5)
+//        let image = UIView.zl_createImage(size: CGSize(width: itemW, height: itemW), fillColor: ZLColor.Green_Dark, withCorner: itemW * 0.5)
         btn = UIButton()
         btn.addTarget(self, action: #selector(clickMidButton), for: UIControlEvents.touchUpInside)
-        btn.setBackgroundImage(image, for: UIControlState.normal)
-        btn.setBackgroundImage(image, for: UIControlState.highlighted)
+//        btn.setBackgroundImage(image, for: UIControlState.normal)
+//        btn.setBackgroundImage(image, for: UIControlState.highlighted)
         self.addSubview(btn)
     }
     
     //点击btn按钮
     @objc func clickMidButton(){
         self.zlTabBarDelegate?.clickMidTabBar()
-//        logInfo("能来吗")
     }
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -64,6 +120,7 @@ class ZLTabBar: UITabBar {
             btnY = minHeight - maxHeight
         }
         self.btn.center = CGPoint(x: self.center.x, y:btnY)
+        addLineView(itemW: itemW)
     }
     
     //MARK: -处理超出tabBar的btn的点击事件
@@ -71,7 +128,6 @@ class ZLTabBar: UITabBar {
         if self.isHidden == false {
             let currentPoint = self.convert(point, to: self.btn)
             if self.btn.point(inside: currentPoint, with: event) {
-//                logInfo("来几次啊")
                 return self.btn
             }
         }

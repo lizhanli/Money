@@ -44,9 +44,6 @@ class ZLHomeViewController: BaseUIViewControllerPlan{
         super.viewDidLoad()
         cellArray = [UITableViewCell()]
         
-        let vc = AccountViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
-        
     }
     //MARK: -UITableViewDataSource
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

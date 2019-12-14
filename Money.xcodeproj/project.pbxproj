@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		53F0006C716CCCA823F2CE4D /* Pods_Money.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3006BAA188EDBD3B00CE44 /* Pods_Money.framework */; };
 		7508DE62222825C700E04F16 /* ZLUITouchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7508DE61222825C700E04F16 /* ZLUITouchViewController.swift */; };
+		750AC6C82254A54000188719 /* ZLAccount.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 750D7130224E167400EF9B73 /* ZLAccount.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		750BAD5121ECB523000EB4F0 /* ZLPrototypePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750BAD5021ECB523000EB4F0 /* ZLPrototypePattern.swift */; };
-		750D7131224E167400EF9B73 /* ZLAccount.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750D7130224E167400EF9B73 /* ZLAccount.framework */; };
+		750DA6AB2290F5A300E80B6D /* CustomUISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750DA6AA2290F5A300E80B6D /* CustomUISearchBar.swift */; };
 		75134C1820ADCBDF00873E27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75134C1720ADCBDF00873E27 /* AppDelegate.swift */; };
 		75134C1A20ADCBDF00873E27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75134C1920ADCBDF00873E27 /* ViewController.swift */; };
 		75134C1D20ADCBDF00873E27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75134C1B20ADCBDF00873E27 /* Main.storyboard */; };
@@ -98,11 +99,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		750AC6C92254A54000188719 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				750AC6C82254A54000188719 /* ZLAccount.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		7508DE61222825C700E04F16 /* ZLUITouchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLUITouchViewController.swift; sourceTree = "<group>"; };
 		750BAD5021ECB523000EB4F0 /* ZLPrototypePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLPrototypePattern.swift; sourceTree = "<group>"; };
 		750BAD5221ECB57F000EB4F0 /* Pattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Pattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		750D7130224E167400EF9B73 /* ZLAccount.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ZLAccount.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		750DA6AA2290F5A300E80B6D /* CustomUISearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUISearchBar.swift; sourceTree = "<group>"; };
 		75134C1420ADCBDF00873E27 /* Money.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Money.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75134C1720ADCBDF00873E27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75134C1920ADCBDF00873E27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -188,7 +204,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				750D7131224E167400EF9B73 /* ZLAccount.framework in Frameworks */,
 				53F0006C716CCCA823F2CE4D /* Pods_Money.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +314,7 @@
 				75ABE2232219A1F700B63545 /* SearchCell.xib */,
 				75134C7320ADCE9200873E27 /* ZLHomeViewController.swift */,
 				75187B9D2237BA0800CFF980 /* ZLSearchBarViewController.swift */,
+				750DA6AA2290F5A300E80B6D /* CustomUISearchBar.swift */,
 				75A3B789221C509B005B50AE /* ZLCustomShapeViewController.swift */,
 				759CE43522111AD100F74AF5 /* ZLStretchImageController.swift */,
 				75273A9E2111AB48000602FE /* ZLLazyScrollViewController.swift */,
@@ -478,6 +494,7 @@
 				75134C1120ADCBDF00873E27 /* Frameworks */,
 				75134C1220ADCBDF00873E27 /* Resources */,
 				C9933B8F8D532D2C3B576CBF /* [CP] Embed Pods Frameworks */,
+				750AC6C92254A54000188719 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -705,6 +722,7 @@
 				75CD1D9420B29FE300EE8B21 /* BaseUITableViewController.swift in Sources */,
 				7582B8A820B53D72002585CC /* ZLAnimationController.swift in Sources */,
 				75134C8720ADD1DA00873E27 /* ZLTabBarController.swift in Sources */,
+				750DA6AB2290F5A300E80B6D /* CustomUISearchBar.swift in Sources */,
 				75134C5D20ADCD3A00873E27 /* ExtensionUIBezierPath.swift in Sources */,
 				75134C8620ADD1DA00873E27 /* ZLNavViewController.swift in Sources */,
 				75ABE2242219A1F700B63545 /* SearchCell.swift in Sources */,

@@ -33,7 +33,7 @@ class ZLTabBarController: UITabBarController,UITabBarControllerDelegate {
         let meNav = ZLNavViewController(rootViewController: meVc)
         self.addChildViewController(meNav)
         
-        self.tabBar.barTintColor = UIColor.cyan
+
         let tabBarItem = UITabBarItem.appearance()
         tabBarItem.setTitleTextAttributes([NSAttributedStringKey.font:UIFont.systemFont(ofSize: 15),NSAttributedStringKey.foregroundColor:UIColor.darkGray], for: UIControlState.normal)
         tabBarItem.setTitleTextAttributes([NSAttributedStringKey.font:UIFont.systemFont(ofSize: 15),NSAttributedStringKey.foregroundColor:UIColor.red], for: UIControlState.selected)
